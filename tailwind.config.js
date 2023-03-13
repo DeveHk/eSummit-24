@@ -81,6 +81,26 @@ module.exports = {
         },
       },
     },
+    keyframes: {
+      rotate: {
+        from: {
+          rotate: "0deg",
+        },
+
+        to: {
+          rotate: "30deg",
+          scale: "20 2.3",
+        },
+
+        to: {
+          rotate: "0deg",
+          scale: "1 1",
+        },
+      },
+    },
+    animation: {
+      rotate: "rotate 3s infinite",
+    },
   },
   plugins: [],
 };
