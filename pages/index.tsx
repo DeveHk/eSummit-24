@@ -1,7 +1,12 @@
 import { Inter } from "@next/font/google";
+import Landing from "../components/Landing/Landing";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <div className="w-full min-h-[100vh]">
+      <Landing />
+    </div>
+  );
 }
