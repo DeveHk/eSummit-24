@@ -4,7 +4,7 @@ import { GiAbstract092, GiComputerFan, GiDividedSquare } from "react-icons/gi";
 const SideMenu = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <div className="fixed left-0 top-0">
+    <div className="fixed left-0 top-0 z-10">
       <div
         className="h-[100px] w-full flex justify-center items-center flex-col absolute bottom-0 z-10"
         onClick={() => {
