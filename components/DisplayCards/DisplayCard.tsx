@@ -28,14 +28,14 @@ const DisplayCard = (props: Props) => {
           className={`flex flex-col items-center bg-transparent flip-card-inner-${i}`}
         >
           <div
-            className={` h-100%] flip-card-front flip-card mt-10 flex w-[100%] items-center transition-[filter] duration-150`}
+            className={` h-[100%]  flip-card-front flip-card mt-10 flex w-[100%] items-center transition-[filter] duration-150`}
           >
             <div className={`flip-card-inner-${i}`}>
               <div className="flip-card-front relative">
                 <Image
                   src="https://unsplash.it/1600/900"
                   alt=""
-                  className="rounded"
+                  className="rounded-xl"
                   width={1100}
                   height={400}
                   quality={1}

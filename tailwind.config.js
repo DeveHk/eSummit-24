@@ -19,7 +19,7 @@ module.exports = {
     },
     boxShadow: {
       lowlit:
-        "0px 0px 30px 1px #D3BAFF, inset 0px 0px 50px 5px rgba(255, 255, 255, 0.2)",
+        "0px 0px 5px 1px #D3BAFF, inset 0px 0px 10px 5px rgba(255, 255, 255, 0.2)",
 
       extrasoft: "0px 0px 6px 5px rgba(0, 0, 0, 0.2)",
       soft: "0px 0px 6px 5px rgba(0, 0, 0, 0.2)",

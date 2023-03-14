@@ -31,8 +31,9 @@ const SideMenu = () => {
       <div
         className={`${
           !toggle ? "-translate-x-[110%] " : "translate-x-[0]"
-        } w-[150px] shadow-lowlit transition-[transform] duration-300 backdrop-blur-[2px] bg-[#00435B] h-[100vh] shadow-2xl`}
+        } w-[150px] shadow-lowlit transition-[transform] duration-300 backdrop-blur-[2px] bg-black  h-[100vh] shadow-2xl`}
       >
+        {/*bg-[#00435B]*/}
         <div className="h-20 w-20 absolute top-0">
           <Image
             height={100}
