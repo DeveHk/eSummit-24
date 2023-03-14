@@ -1,10 +1,11 @@
+import Image from "next/image";
 import { useState } from "react";
 import { GiAbstract092, GiComputerFan, GiDividedSquare } from "react-icons/gi";
 
 const SideMenu = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <div className="fixed left-0 top-0 ">
+    <div className="fixed left-0 top-0 z-10">
       <div
         className="h-[100px] w-full flex justify-center items-center flex-col absolute bottom-[50px] z-10"
         onClick={() => {
@@ -30,32 +31,43 @@ const SideMenu = () => {
       <div
         className={`${
           !toggle ? "-translate-x-[110%] " : "translate-x-[0]"
-        } w-[150px] transition-[transform] duration-300 bg-[#00435B] h-[100vh] shadow-2xl`}
+        } w-[150px] shadow-lowlit transition-[transform] duration-300 backdrop-blur-[2px] bg-[#00435B] h-[100vh] shadow-2xl`}
       >
-        <div className="w-full flex-col flex justify-center">
-          <div className="flex flex-col items-center  justify-center m-10">
-            <GiDividedSquare
-              className="text-[#ECE2FF] h-[60px] w-[60px]
+        <div className="h-20 w-20 absolute top-0">
+          <Image
+            height={100}
+            width={100}
+            src={"pill.svg"}
+            alt={"pill"}
+            className="h-full w-full animate-random"
+          />
+        </div>
+        <div className="h-full backdrop-blur-[10px]">
+          <div className="w-full  h-full flex-col flex justify-center">
+            <div className="flex flex-col items-center  justify-center m-10">
+              <GiDividedSquare
+                className="text-[#ECE2FF] h-[60px] w-[60px]
           "
-            />
-            <div className="text-[#ECE2FF] text-lg font-semibold">HOME</div>
-          </div>
-          <div className="flex flex-col items-center justify-center mb-10">
-            <GiAbstract092
-              className="text-[#ECE2FF] h-[60px] w-[60px]
+              />
+              <div className="text-[#ECE2FF] text-lg font-semibold">HOME</div>
+            </div>
+            <div className="flex flex-col items-center justify-center mb-10">
+              <GiAbstract092
+                className="text-[#ECE2FF] h-[60px] w-[60px]
           "
-            />
+              />
 
-            <div className="text-[#ECE2FF] text-lg font-semibold">EVENTS</div>
-          </div>
-          <div className="flex flex-col items-center  justify-center ">
-            <GiComputerFan
-              className="text-[#ECE2FF] h-[60px] w-[60px]
+              <div className="text-[#ECE2FF] text-lg font-semibold">EVENTS</div>
+            </div>
+            <div className="flex flex-col items-center  justify-center ">
+              <GiComputerFan
+                className="text-[#ECE2FF] h-[60px] w-[60px]
           "
-            />
+              />
 
-            <div className="text-[#ECE2FF] text-lg font-semibold">
-              HACKATHON
+              <div className="text-[#ECE2FF] text-lg font-semibold">
+                HACKATHON
+              </div>
             </div>
           </div>
         </div>
