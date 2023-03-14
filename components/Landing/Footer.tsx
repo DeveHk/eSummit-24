@@ -4,7 +4,7 @@ const Footer = () => {
   }
 
   return (
-    <footer className="h-screen py-6 flex flex-col gap-12 bg-[#101010]">
+    <footer className="h-screen py-6 flex flex-col gap-12 bg-[#231F20]">
       <h2
         className="text-center text-7xl font-bold
       text-transparent bg-clip-text bg-gradient-to-r from-[#57EFFE] to-[#DFCFFF]
