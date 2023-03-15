@@ -9,8 +9,10 @@ const useScrollAnimation = (clas: any, clasdel: any) => {
       threshold: 0,
     };
     const callback = (entries: any, observer: any) => {
+      console.log(observer);
       entries.forEach((entry: any) => {
-        if (entry.intersectionRatio > 0) {
+        console.log(entry.intersectionRatio);
+        if (entry.intersectionRatio > 0.2) {
           clas.forEach((c: any) => {
             entry.target.classList.add(c);
           });
@@ -18,7 +20,11 @@ const useScrollAnimation = (clas: any, clasdel: any) => {
             clasdel.forEach((c: any) => {
               entry.target.classList.remove(c);
             });
-          observer.unobserve(entry.target);
+          //observer.unobserve(entry.target);
+        } else {
+          clas.forEach((c: any) => {
+            entry.target.classList.remove(c);
+          });
         }
       });
     };

@@ -37,9 +37,7 @@
 .flip-card-inner-1 {
   transform: rotateY(30deg);
 }
-.flip-card-head:hover .flip-card-inner-1 {
-  transform: rotateY(0deg);
-}
+
 .flip-card-inner-2 {
   position: relative;
   width: 100%;
@@ -51,9 +49,7 @@
 .flip-card-inner-2 {
   transform: rotateY(-30deg);
 }
-.flip-card-head:hover .flip-card-inner-2 {
-  transform: rotateY(0deg);
-}
+
 .flip-card-front {
   position: relative;
   width: 100%;
@@ -95,4 +91,8 @@
 .sfsdf::-webkit-scrollbar,
 .sdfdsf434::-webkit-scrollbar {
   display: none;
+}
+
+.flip-card-inner-flip {
+  transform: rotateY(0deg);
 }

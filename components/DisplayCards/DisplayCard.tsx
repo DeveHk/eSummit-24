@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import useScrollAnimation from "../Hooks/useScrollAnimation";
 
 type Props = {
   heading?: string;
@@ -12,6 +13,7 @@ type Props = {
 const DisplayCard = (props: Props) => {
   const { heading, brief, link, i } = props;
   const [glow, setGlow] = useState(false);
+  const card = useScrollAnimation(["flip-card-inner-flip"], []);
 
   return (
     <div className=" z-[2] flex flex-col md:flex-row  my-6 gap-7 items-center justify-center flip-card-head py-10">
@@ -25,12 +27,12 @@ const DisplayCard = (props: Props) => {
         }}
       >
         <div
-          className={`flex flex-col items-center bg-transparent flip-card-inner-${i}`}
+          className={`flex flex-col items-center bg-transparent  flip-card-inner-${i}`}
         >
           <div
             className={` h-[100%]  flip-card-front flip-card mt-10 flex w-[100%] items-center transition-[filter] duration-150`}
           >
-            <div className={`flip-card-inner-${i}`}>
+            <div ref={card} className={`flip-card-inner-${i} `}>
               <div className="flip-card-front relative">
                 <Image
                   src="https://unsplash.it/1600/900"
