@@ -12,7 +12,7 @@ const useScrollAnimation = (clas: any, clasdel: any) => {
       console.log(observer);
       entries.forEach((entry: any) => {
         console.log(entry.intersectionRatio);
-        if (entry.intersectionRatio > 0.2) {
+        if (entry.intersectionRatio > 0) {
           clas.forEach((c: any) => {
             entry.target.classList.add(c);
           });
@@ -24,6 +24,10 @@ const useScrollAnimation = (clas: any, clasdel: any) => {
         } else {
           clas.forEach((c: any) => {
             entry.target.classList.remove(c);
+            if (clasdel)
+              clasdel.forEach((c: any) => {
+                entry.target.classList.add(c);
+              });
           });
         }
       });

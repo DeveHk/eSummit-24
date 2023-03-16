@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 import useScrollAnimation from "../Hooks/useScrollAnimation";
+import DisplayCardDesc from "./DisplayCardDesc";
 
 type Props = {
   heading?: string;
@@ -47,23 +47,7 @@ const DisplayCard = (props: Props) => {
           </div>
         </div>
       </div>
-      <div className="content flex flex-col gap-5">
-        <h2 className="text-white max-w-xs m-auto text-center text-4xl my-4 font-semibold tracking-wide">
-          {heading || "Event is Lit"}
-        </h2>
-        <p className="text-center text-white text-lg max-w-sm m-auto">
-          {brief ||
-            "Event is very lit Lorem, ipsum dolor. Lorem ipsum dolor sit."}
-        </p>
-        <div className="btn text-center">
-          <Link
-            href={link || ""}
-            className="text-xl text-white  border-2 rounded-full px-4 py-2"
-          >
-            See More
-          </Link>
-        </div>
-      </div>
+      <DisplayCardDesc key={i} />
     </div>
   );
 };
