@@ -1,8 +1,13 @@
 import Image from "next/image";
 import { useState } from "react";
 import { GiAbstract092, GiComputerFan, GiDividedSquare } from "react-icons/gi";
+import useScrollAnimation from "../Hooks/useScrollAnimation";
 
 const SideMenu = () => {
+  const ani = useScrollAnimation(
+    ["opacity-100", "translate-x-[0px]", "rotate-0"],
+    ["opacity-0", "translate-x-[10px]", "rotate-45"]
+  );
   const [toggle, setToggle] = useState(false);
   return (
     <div className="fixed left-0 top-0 z-10">
@@ -43,8 +48,11 @@ const SideMenu = () => {
             className="h-full w-full animate-random"
           />
         </div>
-        <div className="h-full backdrop-blur-[10px]">
-          <div className="w-full  h-full flex-col flex justify-center">
+        <div className="h-full backdrop-blur-[10px] relative">
+          <div
+            ref={ani}
+            className="opacity-0 rotate-45 origin-top translate-x-[10px] transition-[opacity,_transform] duration-700 w-full  h-full flex-col flex justify-center"
+          >
             <div className="flex flex-col items-center  justify-center m-10">
               <GiDividedSquare
                 className="text-[#ECE2FF] h-[60px] w-[60px]

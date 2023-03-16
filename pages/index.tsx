@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <>
+    <div className="relative w-full overflow-x-hidden">
       <div className="w-full min-h-[100vh]">
         <Landing />
       </div>
@@ -21,6 +21,6 @@ export default function Home() {
       <div className="min-h-[100vh]">
         <Footer />
       </div>
-    </>
+    </div>
   );
 }

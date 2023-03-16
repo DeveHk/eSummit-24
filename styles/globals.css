@@ -47,7 +47,7 @@
   transform-style: preserve-3d;
 }
 .flip-card-inner-2 {
-  transform: rotateY(-30deg);
+  transform: rotateY(-40deg);
 }
 
 .flip-card-front {
@@ -60,6 +60,7 @@
 
 .popup {
   animation: popup 0.6s;
+  animation-duration: 2s;
 }
 @media (min-width: 768px) {
   .popup {
@@ -73,6 +74,81 @@
 
   100% {
     transform: translateX(0) translateY(0) scale(1);
+  }
+}
+.tridoc1 {
+  animation: doc infinite;
+  animation-delay: 100ms;
+  animation-duration: 3s;
+}
+.tridoc2 {
+  animation: doc infinite;
+  animation-delay: 50ms;
+  animation-duration: 3s;
+}
+.tridoc3 {
+  animation: doc infinite;
+  animation-duration: 3s;
+}
+@keyframes doc {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    filter: drop-shadow(50px 60px 2mm #a000d2)
+      drop-shadow(-45px -60px 2mm #d3baff);
+  }
+  40% {
+    filter: drop-shadow(50px 60px 3mm rgb(160, 0, 210))
+      drop-shadow(-45px -60px 3mm #d3baff);
+  }
+  60% {
+    filter: drop-shadow(50px 60px 5mm rgb(160, 0, 210))
+      drop-shadow(-45px -60px 5mm #d3baff);
+  }
+  80% {
+    filter: drop-shadow(45px 60px 1mm rgb(160, 0, 210))
+      drop-shadow(-45px -60px 1mm #d3baff);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.flimSheet {
+  animation: sheet infinite;
+  animation-duration: 3s;
+}
+@keyframes sheet {
+  0% {
+  }
+  18% {
+    box-shadow: inset 0px 0px 0px 0px #ccaeff;
+  }
+  20% {
+    box-shadow: inset 0px 0px 40px 5px #ccaeff;
+  }
+  25% {
+    box-shadow: inset 0px 0px 0px 0px #ccaeff;
+  }
+  48% {
+    box-shadow: inset 0px 0px 40px 5px #ccaeff;
+  }
+  50% {
+    box-shadow: inset 0px 0px 40px 5px #ccaeff;
+  }
+  55% {
+    box-shadow: inset 0px 0px 0px 0px #ccaeff;
+  }
+  78% {
+    box-shadow: inset 0px 0px 0px 0px #ccaeff;
+  }
+  80% {
+    box-shadow: inset 0px 0px 40px 5px #ccaeff;
+  }
+  85% {
+    box-shadow: inset 0px 0px 0px 0px #ccaeff;
+  }
+  100% {
   }
 }
 .sfsdf::-webkit-scrollbar {

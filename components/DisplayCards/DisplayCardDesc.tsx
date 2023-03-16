@@ -1,15 +1,20 @@
 import Link from "next/link";
 import useScrollAnimation from "../Hooks/useScrollAnimation";
 
-const DisplayCardDesc = ({ heading, brief, link, key }: any) => {
+const DisplayCardDesc = ({ heading, brief, link, i }: any) => {
   const ani = useScrollAnimation(
     ["translate-x-[0]", "opacity-100"],
-    ["translate-x-[200px]", "opacity-0"]
+    i === 1
+      ? ["translate-x-[200px]", "opacity-0"]
+      : ["-translate-x-[200px]", "opacity-0"]
   );
+  console.log(i);
   return (
     <div
       ref={ani}
-      className="content flex flex-col gap-5 transition-[transform,_opacity] duration-500 translate-x-[200px] opacity-0 "
+      className={`content flex flex-col gap-5 transition-[transform,_opacity] duration-500 ${
+        i === 1 ? "translate-x-[200px]" : "-translate-x-[200px]"
+      } opacity-0 `}
     >
       <h2 className="text-white max-w-xs m-auto text-center text-4xl my-4 font-semibold tracking-wide">
         {heading || "Event is Lit"}

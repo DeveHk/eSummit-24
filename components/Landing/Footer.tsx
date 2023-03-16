@@ -1,19 +1,50 @@
+import Image from "next/image";
+
 const Footer = () => {
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   return (
-    <footer className="h-screen py-6 flex flex-col gap-12 bg-[#231F20]">
+    <footer className="h-screen py-6 flex flex-col gap-12 bg-[#231F20] relative">
+      <div className="drop-shadow-lowGlowtext absolute left-[20%] top-[20%]">
+        <div className="w-[150px] absolute top-0 h-[150px] tridoc3">
+          <Image
+            src={"/layer1.svg"}
+            className="w-full h-full"
+            alt={""}
+            height={100}
+            width={100}
+          />{" "}
+        </div>
+        <div className="w-[150px] h-[150px] absolute top-[15px] left-[20px] tridoc2">
+          <Image
+            src={"/layer2.svg"}
+            className="w-full h-full"
+            alt={""}
+            height={100}
+            width={100}
+          />{" "}
+        </div>
+        <div className="w-[150px] h-[150px] absolute top-[30px] left-[40px]  tridoc1">
+          <Image
+            src={"/layer3.svg"}
+            className="w-full h-full"
+            alt={""}
+            height={100}
+            width={100}
+          />{" "}
+        </div>
+      </div>
       <h2
         className="text-center text-7xl font-bold
-      text-transparent bg-clip-text bg-gradient-to-r from-[#57EFFE] to-[#DFCFFF]
+      text-transparent bg-clip-text bg-gradient-to-r from-[#31a0ab] to-[#DFCFFF]
       "
       >
         Reach out to Us!
       </h2>
-      <div className="flex items-center justify-center grow">
-        <form className="text-white w-[40%] rounded-md backdrop-blur-md">
+      <div className="flex items-center justify-center grow ">
+        <form className="text-white w-[80%] sm:w-[70%] md:w-[60%] lg:w-[40%] max-w-[600px]  rounded-2xl backdrop-blur-md p-10 bg-opacity-10  bg-[#CCAEFF]">
           <div className="mb-4">
             <label
               htmlFor="contact-name"
@@ -24,7 +55,7 @@ const Footer = () => {
             <input
               type="text"
               id="contact-name"
-              className="bg-[#232323] px-4 py-3 rounded w-1/2"
+              className="bg-[#232323] px-4 py-3 rounded w-full"
               placeholder="Name"
             />
           </div>
@@ -56,18 +87,22 @@ const Footer = () => {
               rows={4}
             ></textarea>
           </div>
-          <button
-            className="py-2 px-8 text-lg font-bold border rounded-full
-          hover:bg-gradient-to-r from-[#57EFFE] to-[#DFCFFF]
+          <div className="w-full flex justify-center h-full">
+            <button
+              className="py-2 px-8 w-[50%] text-lg font-bold border rounded-full
+          hover:bg-gradient-to-r box-border from-[#a000d2] to-[#ccaeff]
+          hover:border-none
             duration-300
-            hover:text-black
+            hover:text-black 
             "
-          >
-            Submit
-          </button>
+            >
+              Submit
+            </button>
+          </div>
         </form>
       </div>
-      <nav className="text-gray-400 ml-auto mr-12 text-xl flex items-center gap-8">
+
+      <nav className="text-gray-400  text-xl flex items-center justify-around w-full md:px-[4%] lg:px-[10%]">
         <span>&copy; Ecell-NSUT, 2023</span>
         <a className="cursor-pointer relative group">
           <span>Events</span>
