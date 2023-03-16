@@ -37,7 +37,7 @@ const DisplayCard = (props: Props) => {
                 <Image
                   src="https://unsplash.it/1600/900"
                   alt=""
-                  className="rounded-xl"
+                  className="rounded-xl "
                   width={1100}
                   height={400}
                   quality={1}
@@ -47,7 +47,7 @@ const DisplayCard = (props: Props) => {
           </div>
         </div>
       </div>
-      <DisplayCardDesc key={i} />
+      <DisplayCardDesc i={i} />
     </div>
   );
 };
