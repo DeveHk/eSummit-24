@@ -13,11 +13,11 @@ export default function Events() {
         Our Events
       </h1>
       {eventsData.map(({ categoryName, events }) => (
-        <div className="mb-8">
+        <div key={categoryName} className="mb-8">
           <h3 className="text-white text-2xl mb-6">{categoryName}</h3>
           <div className="grid grid-cols-3 gap-8">
             {events.map((event) => (
-              <EventCard {...event} />
+              <EventCard key={event.eventName} {...event} />
             ))}
           </div>
         </div>
