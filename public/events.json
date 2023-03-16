@@ -1,0 +1,80 @@
+[
+	{
+		"categoryName": "Category 1",
+		"events": [
+								{
+									"eventName": "Investopreneur",
+									"eventImage": "https://unsplash.it/1600/900",
+									"eventShortDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil veniam aliquam maiores voluptates tempore vitae amet! Eos, sint optio accusamus esse ullam quidem dolore!",
+									"eventDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil veniam aliquam maiores voluptates tempore vitae amet! Eos, sint optio accusamus esse ullam quidem dolore!",
+									"registrationLink": "https://github.com"
+								},
+								{
+									"eventName": "Investopreneur",
+									"eventImage": "https://unsplash.it/1600/900",
+									"eventShortDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil veniam aliquam maiores voluptates tempore vitae amet! Eos, sint optio accusamus esse ullam quidem dolore!",
+									"eventDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil veniam aliquam maiores voluptates tempore vitae amet! Eos, sint optio accusamus esse ullam quidem dolore!",
+									"registrationLink": "https://github.com"
+								},
+								{
+									"eventName": "Investopreneur",
+									"eventImage": "https://unsplash.it/1600/900",
+									"eventShortDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil veniam aliquam maiores voluptates tempore vitae amet! Eos, sint optio accusamus esse ullam quidem dolore!",
+									"eventDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil veniam aliquam maiores voluptates tempore vitae amet! Eos, sint optio accusamus esse ullam quidem dolore!",
+									"registrationLink": "https://github.com"
+								}
+							]
+	},
+	{
+		"categoryName": "Category 2",
+		"events": [
+								{
+									"eventName": "Investopreneur",
+									"eventImage": "https://unsplash.it/1600/900",
+									"eventShortDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil veniam aliquam maiores voluptates tempore vitae amet! Eos, sint optio accusamus esse ullam quidem dolore!",
+									"eventDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil veniam aliquam maiores voluptates tempore vitae amet! Eos, sint optio accusamus esse ullam quidem dolore!",
+									"registrationLink": "https://github.com"
+								},
+								{
+									"eventName": "Investopreneur",
+									"eventImage": "https://unsplash.it/1600/900",
+									"eventShortDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil veniam aliquam maiores voluptates tempore vitae amet! Eos, sint optio accusamus esse ullam quidem dolore!",
+									"eventDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil veniam aliquam maiores voluptates tempore vitae amet! Eos, sint optio accusamus esse ullam quidem dolore!",
+									"registrationLink": "https://github.com"
+								},
+								{
+									"eventName": "Investopreneur",
+									"eventImage": "https://unsplash.it/1600/900",
+									"eventShortDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil veniam aliquam maiores voluptates tempore vitae amet! Eos, sint optio accusamus esse ullam quidem dolore!",
+									"eventDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil veniam aliquam maiores voluptates tempore vitae amet! Eos, sint optio accusamus esse ullam quidem dolore!",
+									"registrationLink": "https://github.com"
+								}
+							]
+	},
+	{
+		"categoryName": "Category 3",
+		"events": [
+								{
+									"eventName": "Investopreneur",
+									"eventImage": "https://unsplash.it/1600/900",
+									"eventShortDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil veniam aliquam maiores voluptates tempore vitae amet! Eos, sint optio accusamus esse ullam quidem dolore!",
+									"eventDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil veniam aliquam maiores voluptates tempore vitae amet! Eos, sint optio accusamus esse ullam quidem dolore!",
+									"registrationLink": "https://github.com"
+								},
+								{
+									"eventName": "Investopreneur",
+									"eventImage": "https://unsplash.it/1600/900",
+									"eventShortDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil veniam aliquam maiores voluptates tempore vitae amet! Eos, sint optio accusamus esse ullam quidem dolore!",
+									"eventDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil veniam aliquam maiores voluptates tempore vitae amet! Eos, sint optio accusamus esse ullam quidem dolore!",
+									"registrationLink": "https://github.com"
+								},
+								{
+									"eventName": "Investopreneur",
+									"eventImage": "https://unsplash.it/1600/900",
+									"eventShortDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil veniam aliquam maiores voluptates tempore vitae amet! Eos, sint optio accusamus esse ullam quidem dolore!",
+									"eventDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil veniam aliquam maiores voluptates tempore vitae amet! Eos, sint optio accusamus esse ullam quidem dolore!",
+									"registrationLink": "https://github.com"
+								}
+							]
+	}
+]

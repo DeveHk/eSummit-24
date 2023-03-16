@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = () => {
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -69,13 +71,13 @@ const Footer = () => {
       </div>
       <nav className="text-gray-400 ml-auto mr-12 text-xl flex items-center gap-8">
         <span>&copy; Ecell-NSUT, 2023</span>
-        <a className="cursor-pointer relative group">
+        <Link href="/events" className="cursor-pointer relative group">
           <span>Events</span>
           <span
             className="absolute inset-x-0 bottom-0 h-0.5 bg-gray-400
            transform scale-x-0 origin-center transition-all duration-300 group-hover:scale-x-100"
           ></span>
-        </a>
+        </Link>
         <a className="cursor-pointer relative group">
           <span>Hackathon</span>
           <span
